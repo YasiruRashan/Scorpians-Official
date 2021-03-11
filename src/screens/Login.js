@@ -24,7 +24,7 @@ export default class Login extends React.Component {
         <Text
           style={{
             fontSize: 20,
-            fontFamily: "Semibold",
+            fontFamily: "fontOne",
             textAlign: "center",
             marginHorizontal: 50,
             opacity: 0.5,
@@ -80,7 +80,7 @@ export default class Login extends React.Component {
           <Text
             style={{
               color: "white",
-              fontFamily: "semibold",
+              fontFamily: "fontOne",
             }}
           >
             Already a member
@@ -91,7 +91,7 @@ export default class Login extends React.Component {
           style={{
             alignSelf: "center",
             color: "#00716F",
-            fontFamily: "semibold",
+            fontFamily: "fontOne",
             paddingVertical: 30,
           }}
         >

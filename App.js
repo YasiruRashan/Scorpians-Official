@@ -17,7 +17,7 @@ export default class App extends React.Component {
 
   async componentDidMount() {
     await Font.loadAsync({
-      SemiBold: require("./src/fonts/Simvoni-Italic.otf"),
+      fontOne: require("./src/fonts/Simvoni-Italic.otf"),
       Medium: require("./src/fonts/Simvoni-BoldItalic.otf"),
       Regular: require("./src/fonts/Macho Weak.ttf"),
     });

@@ -23,7 +23,7 @@ export default class Register extends React.Component {
         <Text
           style={{
             fontSize: 20,
-            fontFamily: "Semibold",
+            fontFamily: "fontOne",
             textAlign: "center",
             marginHorizontal: 50,
             opacity: 0.5,
@@ -106,7 +106,7 @@ export default class Register extends React.Component {
           <Text
             style={{
               color: "white",
-              fontFamily: "semibold",
+              fontFamily: "fontOne",
             }}
           >
             Register
