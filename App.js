@@ -37,8 +37,8 @@ const App = () => {
       <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeScreen} />
       </Stack.Navigator>
-    </NavigationContainer>
-  );
+    </NavigationContainer> /*Navigation*/
+  ); 
 };
 
 export default App;
