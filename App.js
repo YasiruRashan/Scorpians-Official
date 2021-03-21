@@ -19,12 +19,25 @@ import {
   Text,
   useColorScheme,
   View,
+  Button,
 } from 'react-native';
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
   return (
     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
       <Text>Home Screen</Text>
+      <Button
+        title="Go to detail screen"
+        onPress={() => navigation.navigate('Details')}
+      />
+    </View>
+  );
+};
+
+const DetailsScreen = () => {
+  return (
+    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <Text>Details Screen</Text>
     </View>
   );
 };
@@ -36,6 +49,7 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Details" component={DetailsScreen} />
       </Stack.Navigator>
     </NavigationContainer> /*Navigation*/
   );
