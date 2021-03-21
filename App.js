@@ -23,7 +23,7 @@ import {
 
 const HomeScreen = () => {
   return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
       <Text>Home Screen</Text>
     </View>
   );
@@ -38,7 +38,7 @@ const App = () => {
         <Stack.Screen name="Home" component={HomeScreen} />
       </Stack.Navigator>
     </NavigationContainer> /*Navigation*/
-  ); 
+  );
 };
 
 export default App;
