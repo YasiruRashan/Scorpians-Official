@@ -1,28 +1,21 @@
-import {useState} from 'react';
-import Main from "./components/main/Main"
-import Navbar from './components/navbar/Navbar';
-import Sidebar from "./components/sidebar/Sidebar";
+import logo from './logo.svg';
+import './App.css';
+import React from "react";
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import login from "./Pages/login";
 
-const App =()  =>{
-  const [sidebarOpen,setSidebarOpen] = useState(false);
-
-  const openSidebar =() => {
-    setSidebarOpen(true);
-  };
-
-  const closeSidebar =() =>{
-    setSidebarOpen(false);
-
-  };
-
+function App() {
   return (
-    <div className="container"> 
-    <Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar}/>
-    <Main/>
-    <Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar}/>
-    
-    </div>
-    
+    <BrowserRouter>
+    <Switch>
+      <Route exact path="/">
+        <Redirect to="/login" />
+      </Route>
+      <Route exact path="/login" component={login}/>
+      <Route path ="*" render={()=>"404 Not found!"} />
+
+    </Switch>
+    </BrowserRouter>
   );
 }
 
