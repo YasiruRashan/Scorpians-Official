@@ -12,11 +12,12 @@ function App() {
         <Redirect to="/login" />
       </Route>
       <Route exact path="/login" component={login}/>
-      <Route path ="*" render={()=>"404 Not found!"} />
+      <Route path ="*" render={()=>"404 Not found!"} /> //Not found Err executing
 
     </Switch>
     </BrowserRouter>
   );
 }
+
 
 export default App;
