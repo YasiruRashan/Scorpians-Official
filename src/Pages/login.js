@@ -48,8 +48,8 @@ class Login extends Component {
         })
 
         if(valid_data){
-            firebase.firestore().collection("Users").where('email','==',this.state.email).where('IsAdmin','==',true).get().then((querySnapshot) => {
-                if(!querySnapshot.empty){
+           // firebase.firestore().collection("Users").where('email','==',this.state.email).where('IsAdmin','==',true).get().then((querySnapshot) => {
+              //  if(!querySnapshot.empty){
                     firebase.auth().signInWithEmailAndPassword(
                         this.state.email, 
                         this.state.password
@@ -63,13 +63,13 @@ class Login extends Component {
                             show_progress:false,
                         });
                     })
-                }else{
-                    this.state.email_error = "Not Allowed!!"
-                    this.setState({
-                        show_progress:false,
-                    });
-                }
-            })
+               // }else{
+                   /// this.state.email_error = "Not Allowed!!"
+                  //  this.setState({
+                  //      show_progress:false,
+                 //   });
+            //    }
+           // })
         }
     }
 
@@ -106,7 +106,8 @@ class Login extends Component {
             </Box>
         </Container>
         );
+        }
     }
-}
+
 
 export default Login
