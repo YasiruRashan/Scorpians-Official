@@ -64,7 +64,7 @@ class Login extends Component {
                         });
                     })
                // }else{
-                   /// this.state.email_error = "Not Allowed!!"
+                    this.state.email_error = "Not Allowed!!"
                   //  this.setState({
                   //      show_progress:false,
                  //   });
