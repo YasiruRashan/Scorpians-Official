@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container,Box, TextField, CircularProgress, Button } from "@material-ui/core";
 import logo from '../media/agrox.png';
-import { firebaseAuth,firestore } from "../firebase";
+import firebase from "../firebase";
 
 class Login extends Component {
 
@@ -48,22 +48,21 @@ class Login extends Component {
         })
 
         if(valid_data){
-            firestore.collection("Users").where('email','==',this.state.email).where('IsAdmin','==',true).get().then(querySnapshot=>{
+            firebase.firestore().collection("Users").where('email','==',this.state.email).where('IsAdmin','==',true).get().then((querySnapshot) => {
                 if(!querySnapshot.empty){
-                    firebaseAuth.signInWithEmailAndPassword(
-                        this.state.email,
+                    firebase.auth().signInWithEmailAndPassword(
+                        this.state.email, 
                         this.state.password
                     ).then(res=>{
                         this.props.history.replace("/");
-                    })
-                    .catch(err=>{
-                        if(err.code==='auth/wrong-password'){
-                            this.state.password_error="Incorrect Password!!"
+                    }).catch(err=>{
+                        if (err.code==='auth/wrong-password'){
+                            this.state.password_error="Incorrect Password!"
                         }
                         this.setState({
                             show_progress:false,
                         });
-                    });
+                    })
                 }else{
                     this.state.email_error = "Not Allowed!!"
                     this.setState({
