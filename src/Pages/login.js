@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container,Box, TextField, CircularProgress, Button } from "@material-ui/core";
 import logo from '../media/agrox.png';
-import firebase from "../firebase";
+import firebase, {  } from "../firebase";
 
 class Login extends Component {
 
@@ -49,7 +49,7 @@ class Login extends Component {
 
         if(valid_data){
            // firebase.firestore().collection("Users").where('email','==',this.state.email).where('IsAdmin','==',true).get().then((querySnapshot) => {
-              //  if(!querySnapshot.empty){
+               //if(!querySnapshot.empty){
                     firebase.auth().signInWithEmailAndPassword(
                         this.state.email, 
                         this.state.password
@@ -64,7 +64,7 @@ class Login extends Component {
                         });
                     })
                // }else{
-                    this.state.email_error = "Not Allowed!!"
+                    //this.state.email_error = "Not Allowed!!"
                   //  this.setState({
                   //      show_progress:false,
                  //   });
@@ -72,6 +72,8 @@ class Login extends Component {
            // })
         }
     }
+
+
 
     render() {
         return (
