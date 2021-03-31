@@ -7,6 +7,7 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import { Avatar, Container } from '@material-ui/core';
+import BannerSlider from "../Components/BannerSlider";
 
 
 
@@ -50,6 +51,7 @@ export class homeFrangments extends Component {
                       <Tab icon={<CategoryTab/>} />
                     </Tabs>
                   </AppBar>
+                  <BannerSlider/>
                 
                 </Container>
         );
