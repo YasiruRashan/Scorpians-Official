@@ -51,7 +51,7 @@ export class homeFrangments extends Component {
                       <Tab icon={<CategoryTab/>} />
                     </Tabs>
                   </AppBar>
-                  <BannerSlider/>
+                  <BannerSlider Images = {[{image:"We can put the image path here"}]}/>
                 
                 </Container>
         );
