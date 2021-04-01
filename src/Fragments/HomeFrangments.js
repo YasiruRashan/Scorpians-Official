@@ -8,9 +8,8 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import { Avatar, Container } from '@material-ui/core';
 import BannerSlider from "../Components/BannerSlider";
-
-
-
+import ProductView from '../Components/ProductView';
+import HorizontalScroller from '../Components/HorizontalScroller';
 
 export class homeFrangments extends Component {
     constructor(props) {
@@ -52,7 +51,8 @@ export class homeFrangments extends Component {
                     </Tabs>
                   </AppBar>
                   <BannerSlider Images = {[{image:"We can put the image path here"}]}/>
-                
+                 
+                  <HorizontalScroller/>
                 </Container>
         );
     }       
@@ -66,7 +66,7 @@ export const CategoryTab =() =>{
         variant ="square" 
         src="/static/images/avatar/1.jpg"
          />
-        <Typography variant ="body2">Vege Type</Typography>
+        <Typography variant ="body2">Veg Type</Typography>
     </Box>
     ); 
 };
