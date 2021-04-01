@@ -10,6 +10,7 @@ import { Avatar, Container } from '@material-ui/core';
 import BannerSlider from "../Components/BannerSlider";
 import ProductView from '../Components/ProductView';
 import HorizontalScroller from '../Components/HorizontalScroller';
+import StripAdView from '../Components/StripAdView';
 
 export class homeFrangments extends Component {
     constructor(props) {
@@ -53,6 +54,7 @@ export class homeFrangments extends Component {
                   <BannerSlider Images = {[{image:"We can put the image path here"}]}/>
                  
                   <HorizontalScroller/>
+                  <StripAdView/>
                 </Container>
         );
     }       
