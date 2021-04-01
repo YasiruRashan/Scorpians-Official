@@ -11,6 +11,7 @@ import BannerSlider from "../Components/BannerSlider";
 import ProductView from '../Components/ProductView';
 import HorizontalScroller from '../Components/HorizontalScroller';
 import StripAdView from '../Components/StripAdView';
+import GridView from '../Components/GridView';
 
 export class homeFrangments extends Component {
     constructor(props) {
@@ -55,6 +56,7 @@ export class homeFrangments extends Component {
                  
                   <HorizontalScroller/>
                   <StripAdView/>
+                  <GridView/>
                 </Container>
         );
     }       
