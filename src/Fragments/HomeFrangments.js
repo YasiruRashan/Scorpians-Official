@@ -30,7 +30,7 @@ export class homeFrangments extends Component {
 
     render() {
         return (
-                <Container maxWidth="md" fixed >
+                <Container maxWidth="l" fixed >
                   <AppBar position="static" color="white">
                     <Tabs
                       value={this.state.value}
