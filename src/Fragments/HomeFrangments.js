@@ -33,7 +33,7 @@ export class homeFrangments extends Component {
     render() {
         return (
                 <Container maxWidth="l" fixed >
-                  <AppBar position="static" color="white">
+                  <AppBar position="center" color="white">
                     <Tabs
                       value={this.state.value}
                       onChange={this.handleChange}
@@ -50,6 +50,9 @@ export class homeFrangments extends Component {
                       <Tab icon={<CategoryTab/>} />
                       <Tab icon={<CategoryTab/>} />
                       <Tab icon={<CategoryTab/>} />
+                      <Tab icon={<CategoryTab/>} />
+                      <Tab icon={<CategoryTab/>} />
+                      
                     </Tabs>
                   </AppBar>
                   <BannerSlider Images = {[{image:"We can put the image path here"}]}/>
@@ -70,7 +73,7 @@ export const CategoryTab =() =>{
         variant ="square" 
         src="/static/images/avatar/1.jpg"
          />
-        <Typography variant ="body2">Veg Type</Typography>
+        <Typography variant ="body2">Shop NO</Typography>
     </Box>
     ); 
 };
