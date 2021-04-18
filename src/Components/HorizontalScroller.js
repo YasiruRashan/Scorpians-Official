@@ -17,6 +17,7 @@ const HorizontalScroller = () => {
                 <ProductView/>
                 <ProductView/>
                 <ProductView/>
+                <ProductView/>
             </Box>
        </Box>
     )
