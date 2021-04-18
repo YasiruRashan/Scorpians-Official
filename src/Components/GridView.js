@@ -1,3 +1,7 @@
+/*
+Scorpions
+*/
+
 import React from 'react'
 import ProductView from './ProductView'
 import {Box, Typography} from "@material-ui/core";

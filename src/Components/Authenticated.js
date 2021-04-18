@@ -1,3 +1,7 @@
+/*
+Scorpions
+*/
+
 import React, {useState} from 'react';
 import { Redirect } from 'react-router-dom';
 import {firebaseAuth} from "../firebase";
