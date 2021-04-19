@@ -5,9 +5,10 @@ import ProductView from './ProductView'
 const HorizontalScroller = () => {
     return (
       <Box bgcolor="white" p="16px">
-          <Typography variant="h5">Title</Typography>
+          <Typography variant="h5">Today prices...</Typography>
            <Box display="flex" overflow="auto">
                <ProductView/>
+                <ProductView/>
                 <ProductView/>
                 <ProductView/>
                 <ProductView/>
