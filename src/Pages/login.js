@@ -3,6 +3,7 @@ import { Container,Box, TextField, CircularProgress, Button } from "@material-ui
 import logo from '../media/agrox.png';
 import firebase, {  } from "../firebase";
 
+
 class Login extends Component {
 
     constructor(props) {
@@ -74,7 +75,6 @@ class Login extends Component {
     }
 
 
-
     render() {
         return (
         <Container maxWidth="sm">
@@ -113,3 +113,4 @@ class Login extends Component {
 
 
 export default Login
+
