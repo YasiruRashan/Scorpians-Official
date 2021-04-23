@@ -50,5 +50,9 @@ const BannerSlider = (props) => {
       ); 
 }
 
+/*
+ * Exporting default BannerSlider
+ */
+
 export default BannerSlider
 
