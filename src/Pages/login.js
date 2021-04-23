@@ -48,7 +48,7 @@ class Login extends Component {
             update : true
         })
 
-        if(valid_data){
+        if(valid_data){ //data validation
            // firebase.firestore().collection("Users").where('email','==',this.state.email).where('IsAdmin','==',true).get().then((querySnapshot) => {
                //if(!querySnapshot.empty){
                     firebase.auth().signInWithEmailAndPassword(
